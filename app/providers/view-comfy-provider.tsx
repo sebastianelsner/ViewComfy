@@ -155,7 +155,7 @@ function viewComfyReducer(state: IViewComfyState, action: Action): IViewComfySta
                 return state;
             }
             return {
-                appTitle: action.payload.appTitle ?? "ViewComfy",
+                appTitle: action.payload.appTitle ?? "LIDL ViewComfy",
                 appImg: action.payload.appImg ?? "",
                 viewComfys: [...action.payload.workflows.map((workflow) => ({
                     viewComfyJSON: workflow.viewComfyJSON,
@@ -168,7 +168,7 @@ function viewComfyReducer(state: IViewComfyState, action: Action): IViewComfySta
         case ActionType.SET_APP_TITLE:
             return {
                 ...state,
-                appTitle: action.payload || "ViewComfy"
+                appTitle: action.payload || "LIDL ViewComfy"
             };
         case ActionType.SET_APP_IMG:
             return {

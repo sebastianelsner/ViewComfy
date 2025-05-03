@@ -78,13 +78,6 @@ export function Sidebar({ currentTab, onTabChange, deployWindow, onDeployWindow 
                             onClick={() => onTabChange(TabValue.Playground)}
                             isSmallScreen={isSmallScreen}
                         />
-                        <SidebarButton
-                            icon={<Cloud className="size-5" />}
-                            label="Deploy"
-                            isActive={deployWindow === true}
-                            onClick={() => onDeployWindow(!deployWindow)}
-                            isSmallScreen={isSmallScreen}
-                        />
                     </>
                 )}
             </nav>
