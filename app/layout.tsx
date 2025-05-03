@@ -4,7 +4,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
-  title: "ViewComfy LIDL",
+  title: "ViewComfy",
   description: "From ComfyUI to beautiful web apps",
 };
 

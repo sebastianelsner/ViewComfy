@@ -10,7 +10,7 @@ import Image from "next/image";
 export function TopNav() {
     const userManagementEnabled = process.env.NEXT_PUBLIC_USER_MANAGEMENT === "true";
     const { viewComfyState } = useViewComfy();
-    const [appTitle, setAppTitle] = useState(viewComfyState.appTitle || "LIDL ViewComfy");
+    const [appTitle, setAppTitle] = useState(viewComfyState.appTitle || "ViewComfy");
 
     useEffect(() => {
         if (viewComfyState.appTitle) {
